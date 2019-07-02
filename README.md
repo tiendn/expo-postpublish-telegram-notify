@@ -2,12 +2,13 @@
 This project folk from **expo/expo-postpublish-telegram-notify**,
 it stills available on npm, but not Github.
 
-# CHANGELOG
-  * Support expo `release-channel` when post publish to Telegram
-
 Post a notification on Telegram whenever your project is published.
 Presumably you already know this is happening so it's probably more
 useful to non-you people, such as your team or your grandparents.
+
+## CHANGELOG
+  * Support expo `release-channel` when post publish to Telegram
+
 
 ## Installation
 
