@@ -2,12 +2,11 @@ const postDeploy = ({ url, iosManifest, config }) => {
   const { botToken, chatIds } = config;
   const fetch = require('node-fetch');
 
-  const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${url}`;
-
   return Promise.all((chatIds || []).map((chatId) => {
     const releaseChannel = iosManifest.releaseChannel || 'default';
     const queryString = releaseChannel === 'default' ? '' :
       '?release-channel='+encodeURIComponent(releaseChannel)
+    const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${url}${queryString}`;
 
     return fetch(`https://api.telegram.org/bot${botToken}/sendPhoto`, {
       method: 'POST',
