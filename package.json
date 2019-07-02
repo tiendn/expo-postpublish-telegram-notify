@@ -1,0 +1,26 @@
+{
+	"name": "expo-postpublish-telegram-notify",
+	"version": "1.0.1",
+	"description": "Post a notification on Telegram whenever your project is published.",
+	"main": "index.js",
+	"engines": {
+		"node": ">= 6.4.0",
+		"npm": ">= 2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tiendn/expo-postpublish-telegram-notify.git"
+	},
+	"bin": {
+		"expo-postpublish-telegram-notify": "./index.js"
+	},
+	"author": "Jani Eväkallio <jani.evakallio@formidable.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/tiendn/expo-postpublish-telegram-notify/issues"
+	},
+	"homepage": "https://github.com/tiendn/expo-postpublish-telegram-notify#readme",
+	"dependencies": {
+		"node-fetch": "1.7.0"
+	}
+}
