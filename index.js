@@ -30,4 +30,4 @@ const postDeploy = ({ url, iosManifest, config }) => {
   })).then(() => 'Posted notification to Telegram!');
 };
 
-module.exports = postDeploy();
+module.exports = postDeploy;
