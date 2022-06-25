@@ -21,6 +21,6 @@
 	},
 	"homepage": "https://github.com/tiendn/expo-postpublish-telegram-notify#readme",
 	"dependencies": {
-		"node-fetch": "1.7.0"
+		"node-fetch": "2.6.7"
 	}
 }
